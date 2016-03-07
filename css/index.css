@@ -1,0 +1,54 @@
+
+.logImg {
+    -webkit-animation: fadeIn 1s ease both;
+            animation: fadeIn 1s ease both;
+}
+.arr-right, .arr-left {
+    cursor: pointer;
+}
+
+.sliderImg{
+    height: 100%;
+    background-size: cover;
+}
+.index1{
+    background-image: url("../images/header/1.png");
+    background-size: cover;
+    background-position: 50%;
+}
+.index2{
+    background-image: url("../images/header/2.png");
+    background-size: auto 140%;
+    background-position: 50% 0%;
+}
+.index3{
+    background-image: url("../images/header/3.png");
+    background-size: auto 150%;
+    background-position: 50% 0%;
+}
+.index4{
+    background-image: url("../images/header/4.png");
+    background-size: auto 122%;
+    background-position: 50% 0%;
+}
+.index5{
+    background-image: url("../images/header/5.png");
+    background-size: auto 141%;
+    background-position: 100% 0%;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+      }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+      }
+}

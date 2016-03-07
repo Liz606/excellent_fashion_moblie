@@ -1,0 +1,198 @@
+
+.logImg {
+    -webkit-animation: fadeIn 1s ease both;
+            animation: fadeIn 1s ease both;
+}
+.arr-right, .arr-left {
+    cursor: pointer;
+}
+
+.sliderImg{
+    height: 100%;
+    background-size: cover;
+}
+.index1{
+    background-image: url("../images/header/1.png");
+    background-size: cover;
+}
+/** * group culture
+ */
+
+.Liz-scroll {
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+/* 滚动条整体部分width,height,background,border */
+
+.Liz-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+/* 滚动条两端的按钮。可以用display:none让其不显示 */
+
+.Liz-scroll::-webkit-scrollbar-button {
+    display: none;
+}
+
+/*   内层轨道，滚动条中间部分（除去） */
+
+.Liz-scroll::-webkit-scrollbar-track-piece {
+    background: #C0C0C0;
+}
+
+/*  滚动条里面可以拖动的那部分 */
+
+.Liz-scroll::-webkit-scrollbar-thumb {
+    background: #44bcbc;
+    border-radius: 4px;
+}
+
+
+/**
+ * development history
+ */
+
+#time-axis {
+    overflow: hidden;
+    height: 300px;
+}
+.time-axis {
+    margin-top: 55.5%;
+    margin-bottom: 5%;
+    background-image: url('../images/groupinstruct/line.png');
+    background-repeat: repeat-x;
+    height: 10px;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    background-position: 76px 0;
+}
+.time-years {
+    font-size: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    left: 0;
+    position: relative;
+}
+.time-years li {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 55px;
+    margin-top: -30px;
+    width: 120px;
+}
+.time-years li.active {
+    font-size: 20px;
+    color: #44bcbc;
+}
+.time-arrow {
+    height: 10px;
+    width: 15px;
+    position: absolute;
+    top: -10px;
+    left: 16%;
+    background: url("../images/groupinstruct/angle.png") no-repeat;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.time-label {
+    margin-left: -80px;
+    width: 230px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #888;
+    position: absolute;
+    bottom: 167px;
+    left: 40%;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color:transparent;
+    width: 100%;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    }
+.table>tbody>tr {
+    height: 50px;
+    margin: 0 auto;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table>tbody>tr>th {
+    padding-left: 6.25%;
+    text-align: left;
+    font-weight: bold;
+    width: 80px;
+}
+.table>tbody>tr>td {
+    padding-right: 6.25%;
+}
+.table>tbody>tr>td, th {
+    display: table-cell;
+}
+.ChairmanText{
+    height: 100px;
+}
+.ChairmanText li{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    background-position: 50%;
+}
+.index2{
+    background-image: url("../images/header/2.png");
+    background-size: auto 140%;
+    background-position: 50% 0%;
+}
+.index3{
+    background-image: url("../images/header/3.png");
+    background-size: auto 150%;
+    background-position: 50% 0%;
+}
+.index4{
+    background-image: url("../images/header/4.png");
+    background-size: auto 122%;
+    background-position: 50% 0%;
+}
+.index5{
+    background-image: url("../images/header/5.png");
+    background-size: auto 141%;
+    background-position: 100% 0%;
+}
+.Close{
+    position: absolute;
+    z-index: 99;
+    top: 2%;
+    right: 2%;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+      }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+      }
+}

@@ -1,0 +1,33 @@
+.new-title{
+    font-size: 18px;
+    color: #000;
+}
+.new-title .smalle{
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+}
+[class|="navigation"] {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.navigation-prev {
+    background:#c0c0c0 ;
+    float:left;
+}
+
+.navigation-next {
+    background:rgb(68, 188, 187) ;
+    float:left;
+}
+.navigationImg{
+    margin: 11px 17px;
+}
+.navigationText{
+    font-size: 16px;
+    line-height: 24px;
+}

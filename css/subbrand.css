@@ -1,0 +1,74 @@
+.point4{
+    top: 95%!important;
+}
+.icoList{
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.icoList li{
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+        -ms-flex:1;
+            flex:1;
+    margin:0 10px;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.weixinIco2{
+    width: 140px;
+    height: 147px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    -webkit-transform:translateX(-50%);
+            transform:translateX(-50%);
+    background-image:url('../images/subbrand/weixin.png'); 
+}
+.tianmaoIco2{
+    width: 140px;
+    height: 147px;
+    position: absolute;
+    bottom: 60px;
+    left: 74%;
+    -webkit-transform:translateX(-50%);
+            transform:translateX(-50%);
+    background-image:url('../images/subbrand/tianmao.png'); 
+}
+.sliderImg{
+    height: 100%;
+    background-size: cover;
+}
+.subbrand1{
+    background-image: url("../images/subbrand/brand1.png");
+    background-size: cover;
+    background-position: 50%;
+}
+.subbrand2{
+    background-image: url("../images/subbrand/brand2.png");
+    background-size: auto 140%;
+    background-position: 50% 0%;
+}
+.subbrand3{
+    background-image: url("../images/subbrand/brand3.png");
+    background-size: auto 150%;
+    background-position: 50% 0%;
+}
+.subbrand4{
+    background-image: url("../images/subbrand/brand4.png");
+    background-size: auto 122%;
+    background-position: 50% 0%;
+}
+.subbrand5{
+    background-image: url("../images/subbrand/brand5.png");
+    background-size: auto 141%;
+    background-position: 100% 0%;
+}
