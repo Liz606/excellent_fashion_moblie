@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------
  * 返回顶部
  * ------------------------------------------------------------ */
-smoothScroll('.go-header', '#header');
+smoothScroll('.go-header', '#headerTab');
 
 function smoothScroll(btn, target) {
     var animationTime = 500;

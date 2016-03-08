@@ -10,7 +10,16 @@ body {
     width: 100%;
     position: relative;
 }
+.section:before {
+    content: '';
+    display: table;
+}
 
+.section:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
 .Liz-container {
     width: 87.5%;
     margin: 0 auto;
@@ -77,18 +86,26 @@ body {
 .header .overlayer.active {
     background: rgba(68, 188, 188, 0);
 }
-
+.navBox{
+    position: absolute;
+    z-index: 111;
+    top:0;
+}
+#headerTab{}
 .border-bottom{
     border-bottom:1px solid #C2C5C6
 }
 .border-top{
     border-top:1px solid #C2C5C6
 }
+.headerBgBox{
+    height:330px;
+}
 /**
  * 菜单
  */
 .navbar-default {
-    background-color: #f8f8f8;
+    background-color:rgba(225,225,225,.5);
     border-color: #e7e7e7;
 }
 .navbar {
@@ -246,7 +263,7 @@ a {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #777;
+    color: #000;
 }
 .navbar-nav>li>a {
     padding-top: 10px;
@@ -279,7 +296,7 @@ a {
     font-size: 14px;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+     background-color:rgba(255,255,255,.5);
     background-clip: padding-box;
     border: 1px solid #ccc;
     border: 1px solid rgba(0,0,0,.15);
@@ -325,15 +342,15 @@ a {
     float: none;
     width: auto;
     margin-top: 0;
-    background-color: transparent;
+   background-color:rgba(255,255,255,.5);
     border: 0;
     box-shadow: none;
 }
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-    color: #777;
+    color: #000;
 }
 .navbar-nav .open .dropdown-menu>li>a {
-    line-height: 20px;
+    line-height: 28px;
 }
 .dropdown-menu>li>a {
     display: block;
@@ -363,11 +380,7 @@ a, a:visited, a:focus, a:hover {
     -webkit-transform: translateY(-50%) translateX(-50%);
             transform: translateY(-50%) translateX(-50%);
 }
-.headerBgBox{
-    height:270px;
-    background-position: 50% 50%;
-    background-size: cover;
-}
+
 .Liz-navbar {
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -425,8 +438,8 @@ a, a:visited, a:focus, a:hover {
         -webkit-transform: translateY(-80%) translateX(-50%);
                 transform: translateY(-80%) translateX(-50%);
 }
-.picSlider,html,body{
-    height: 100%;
+.picSlider{
+    height: 100vh;
 }
 .picSlider{
     margin-top: -70px; 
@@ -664,7 +677,9 @@ a, a:visited, a:focus, a:hover {
 .btnbox{
     position: absolute;
     bottom: 0%;
-    left: 21%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 .more-btn {
     margin: 21px;
