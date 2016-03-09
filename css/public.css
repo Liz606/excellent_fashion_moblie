@@ -87,7 +87,7 @@ body {
     background: rgba(68, 188, 188, 0);
 }
 .navBox{
-    position: absolute;
+    position: fixed;
     z-index: 111;
     top:0;
 }
@@ -550,7 +550,9 @@ a, a:visited, a:focus, a:hover {
     position: absolute;
     display: inline-block;
     top: 85%;
-    left: 35%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     font-size: 60px;
     z-index: 2;
 }
