@@ -101,8 +101,7 @@ textarea {
  * 禁止长按 a，img 标签长按出现菜单栏
  */
 
-a,
-img {
+a{
     touch-callout: none;
     touch-action: none;
 }
