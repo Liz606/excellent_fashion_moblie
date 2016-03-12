@@ -3,14 +3,9 @@
     -webkit-animation: fadeIn 1s ease both;
             animation: fadeIn 1s ease both;
 }
-.arr-right, .arr-left {
-    cursor: pointer;
-}
 
-.sliderImg{
-    height: 100%;
-    background-size: cover;
-}
+
+
 .index1{
     background-image: url("../images/header/1.png");
     background-size: cover;
@@ -33,7 +28,7 @@
 }
 .index5{
     background-image: url("../images/header/5.png");
-    background-size: auto 141%;
+    background-size: 100%;
     background-position: 100% 0%;
 }
 @-webkit-keyframes fadeIn {
