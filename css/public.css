@@ -227,7 +227,6 @@ a {
 }
 .navbar-collapse.in {
     overflow-y: auto;
-    height: 100vh;
     background: rgba(255,255,255,.9);
 }
 .collapse.in {
@@ -463,7 +462,6 @@ a, a:visited, a:focus, a:hover {
     -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
 }
-
 .owl-wrapper {
     height: 47px;
 }

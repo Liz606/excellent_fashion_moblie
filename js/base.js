@@ -13,6 +13,7 @@ function smoothScroll(btn, target) {
     })
 }
 
+$('.nav').height($(window).height()+'px');
 
 
 $('.close').click(function(e) {
