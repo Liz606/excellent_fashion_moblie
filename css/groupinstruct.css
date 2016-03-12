@@ -93,7 +93,11 @@
     width: 15px;
     position: absolute;
     top:168px;
+<<<<<<< HEAD
     left:50%;
+=======
+    left: 16%;
+>>>>>>> 6560460911cf32f995c4aae407969bfa0d3326f4
     background: url("../images/groupinstruct/angle.png") no-repeat;
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;

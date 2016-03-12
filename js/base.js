@@ -2,8 +2,11 @@
  * 返回顶部
  * ------------------------------------------------------------ */
 smoothScroll('.go-header', '#headerTab');
+<<<<<<< HEAD
 
 $('.picSlider').height($(window).height()+'px');
+=======
+>>>>>>> 6560460911cf32f995c4aae407969bfa0d3326f4
 
 function smoothScroll(btn, target) {
     var animationTime = 500;
