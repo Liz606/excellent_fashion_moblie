@@ -97,17 +97,6 @@ textarea {
 }
 
 
-<<<<<<< HEAD
-=======
-/**
- * 禁止长按 a，img 标签长按出现菜单栏
- */
-
-a{
-    touch-callout: none;
-    touch-action: none;
-}
->>>>>>> 6560460911cf32f995c4aae407969bfa0d3326f4
 a,
 a:visited,
 a:focus,
