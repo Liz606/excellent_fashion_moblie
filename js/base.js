@@ -13,7 +13,6 @@ function smoothScroll(btn, target) {
     })
 }
 
-
 function smoothScrollPlus(btn, target) {
     var animationTime = 500;
 
