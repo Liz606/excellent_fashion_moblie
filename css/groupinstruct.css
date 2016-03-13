@@ -80,8 +80,8 @@
     display: inline-block;
     text-align: center;
     font-size: 16px;
+    padding-left: 132px;
     padding-bottom: 55px;
-    margin-top: -30px;
     width: 120px;
 }
 .time-years li.active {
@@ -92,8 +92,8 @@
     height: 10px;
     width: 15px;
     position: absolute;
-    top: -10px;
-    left: 16%;
+    top:190px;
+    left:40%;
     background: url("../images/groupinstruct/angle.png") no-repeat;
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
@@ -107,7 +107,7 @@
     color: #888;
     position: absolute;
     bottom: 167px;
-    left: 40%;
+    left: 50%;
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
 }
@@ -174,12 +174,6 @@
     background-size: auto 141%;
     background-position: 100% 0%;
 }
-.Close{
-    position: absolute;
-    z-index: 99;
-    top: 2%;
-    right: 2%;
-}
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -196,3 +190,4 @@
         opacity: 1;
       }
 }
+
