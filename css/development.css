@@ -1,0 +1,112 @@
+.navb>li>a {
+	position: relative;
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+    height: 60px;
+    padding: 10px 15px;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+.nav-tabs {
+	width: 100%;
+	 margin-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    height: 60px!important;
+}
+.nav-tabs>li{
+	width: 24%;
+    margin: 1% auto;
+    float: left;
+    margin-bottom: -1px;
+}
+.nav-tabs>li>a{
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.payBtn{
+	text-align: center;
+	position: relative;
+}
+.payBtn:after,.payBtn:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.payBtn:before{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 1px solid #c0c0c0;
+	background: #ffffff;
+}
+.payBtn:after{
+	background: #ffffff;
+	height: 75%;
+}
+.payBtn img{
+	width: 100%;
+    z-index: 99;
+    position: relative;
+}
+.payBtnText{
+	position: absolute;
+	    line-height: 29px;
+	    width: 100%;
+}
+.nav-tabs> li.active>a>.payBtn>.payBtnText{
+	color: rgb(68, 188, 187);
+}
+.fade.in {
+    opacity: 1;
+}
+.tab-content>.tab-pane {
+    display: none;
+}
+.tab-content>.active {
+    display: block;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+.payTable{
+	border:1px solid #000;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    background: rgb(68, 188, 187);
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-bottom: 1px solid #000;
+}
+th {
+    text-align: left;
+}
+td, th {
+    padding: 10px;
+        border-right: 1px solid #000;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
