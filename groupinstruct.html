@@ -16,26 +16,27 @@
 
 </style>
 </head>
-<body>
-<div class="section">
-    <div id="header" class="header mainbgColor">
+<body style="display:none">
+<div id="headerTab"></div>
+<div class="section navBox">
+    <div id="header" class="header">
         <!-- 菜单栏-->
           <nav class="navbar navbar-default">
             <div class="container-fluid">
               <div class="navbar-header mainbgColor" style="height:60px">
-                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><img src="images/header/menu.png" alt="">
                 </div>
-                <a class="navbar-brand" href="#"><img src="images/header/headerlogo.png" alt=""></a>
+                <a class="navbar-brand" href="./index.html"><img src="images/header/headerlogo.png" alt=""></a>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于卓尚 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li class="go-section4"><a href="./groupinstruct.html#section4">集团文化</a></li>
-                        <li class="go-section5"><a href="./groupinstruct.html#section5">发展历史</a></li>
-                        <li class="go-section7"><a href="./groupinstruct.html#section7">集团荣誉</a></li>
-                        <li class="go-section9"><a href="./groupinstruct.html#section9">董事长致词</a></li>
+                        <li class="go-section4 collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><a href="./groupinstruct.html#section4">集团文化</a></li>
+                        <li class="go-section5 collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><a href="./groupinstruct.html#section5">发展历史</a></li>
+                        <li class="go-section7 collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><a href="./groupinstruct.html#section7">集团荣誉</a></li>
+                        <li class="go-section9 collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><a href="./groupinstruct.html#section9">董事长致词</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
@@ -51,15 +52,17 @@
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="./news.html">集团新闻</a></li>
+                      <li class="go-newsJU1"><a href="./news.html#newjionUs1">集团新闻</a></li>
+                      <li class="go-newsJU2"><a href="./news.html#newjionUs2">公益事业</a></li>
+                      <li class="go-newsJU3"><a href="./news.html#newjionUs3">员工关怀</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">人才发展 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="./development.html">加入我们</a></li>
-                      <li><a href="./payment.html">薪酬福利</a></li>
-                      <li><a href="./learn.html">学习发展</a></li>
+                      <li class="go-deveJU1"><a href="./development.html#devejionUs1">加入我们</a></li>
+                      <li class="go-deveJU2"><a href="./development.html#devejionUs2">薪酬福利</a></li>
+                      <li class="go-deveJU3"><a href="./development.html#devejionUs3">学习发展</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
@@ -103,7 +106,7 @@
 </div>
 
 <div id="section2" class="section verticalCenter  border-bottom border-top" style="height:100px">
-    <img class="Center" src="images/groupinstruct/Groupculture.png">
+    <img class="Center2" style="margin-top: 36px;" src="images/groupinstruct/Groupculture.png">
 </div>
 
 <div id="section3" class="text-center">
@@ -158,10 +161,10 @@
 </div>
 
 <div id="section5" class="section verticalCenter border-bottom border-top" style="height:100px">
-    <img class="Center" src="images/groupinstruct/development history.png">
+    <img class="Center2" style="margin-top: 36px;" src="images/groupinstruct/development history.png">
 </div>
 
-<div id="section6" id="time-axis" class="section">
+<div id="section6" id="time-axis" class="section" style="overflow-x:hidden">
     <div class="time-axis"></div>
     <div class="time-arrow"></div>
     <div class="time-label"></div>
@@ -170,7 +173,7 @@
 </div>
 
 <div id="section7" class="section verticalCenter  border-bottom border-top" style="height:100px">
-    <img class="Center" src="images/groupinstruct/Grouphonor.png">
+    <img class="Center2" style="margin-top: 36px;" src="images/groupinstruct/Grouphonor.png">
 </div>
 
 <div id="section8" class="section" style="height:500px"> <!-- 图片滚动 -->
@@ -361,7 +364,7 @@
 </div>
 
 <div id="section9" class="section verticalCenter  border-bottom border-top" style="height:100px">
-    <img class="Center" src="images/groupinstruct/Chairman.png">
+    <img class="Center2" style="margin-top: 36px;" src="images/groupinstruct/Chairman.png">
 </div>
 
 <div id="section10" class="text-center">
@@ -378,90 +381,91 @@
     <div class="collapse in" id="collapseExample">
       <div class="well">
         <div class="section">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
+            <div class="close"><img src="images/nav/close.png" alt=""></div>
+            <div class="panel-group-Box" style="min-height:520px" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default Liz-absolute" style="top:40%">
                   <div class="panel-heading" role="tab" id="headingOne" style="padding:0;height:auto">
                     <h4 class="panel-title text-left">
                       <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <div class="jionUs panel panel-default panel-title text-center" style="height: 60px;">
                           <div class="Liz-cotainer">
-                              筑梦卓尚<span class="toBottonIcon"><img src="images/development/tobutton.png" alt=""></span>
+                              筑梦卓尚<span class="toBottonIcon Liz-none"><img src="images/development/tobutton.png" alt=""></span>
                           </div>
                       </div>
                       </a>
                     </h4>
                   </div>
-                  <div id="collapseOne" class="panel-collapse collapse in padding-justify-20" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="Liz-container Liz-scroll" style="height:400px;overflow:auto;" >
+                  <div id="collapseOne" class="panel-collapse collapse padding-justify-20" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="Liz-container Liz-scroll" style="height:440px;overflow:auto;" >
                         <p style="font-size: 16px;line-height: 30px;">
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp服装道路，义无反顾
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp作为一个没有服装行业工作经验的创业者，能从下岗工人一路走到现在，我始终心怀感恩感谢这一路给我帮助、与我同行的所有人。很多人问我，是什么力量支撑我一直坚持服装行业，其实，也有很多服装行业的人转行，我始终坚持并不是因为我的兴趣和爱好，而是因为责任，是因为需要。如果说只有相信自己会成功的人才会成功，那我愿意做一个自信的人，我不怕被同行打败，因为他们是拿兴趣玩儿，而我是在拿命玩儿。
-内化于心，外化于行
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我能够走到今天其实是团队成就了我，我一直在思考我对团队的价值，因此，12年前我开始用心总结我们之所以成功和发展的关键，这也就是我们今天说得公司的企业文化。我常常觉得，很多学生时代学过的例如这样的知识如果没有实际用处就产生不了它应有的价值，而我们所说的以“只听对的，客户第一，成就他人”为核心价值观的企业文化却是在我们工作中每天都要用到的行动指南。企业文化不是简单的标语，它实实在在地存在于我们每天的工作中，只有将企业文化内化于心、外化于行，你才有可能成为被卓尚认可、被卓尚需要的同行者。
-践行梦想，与你同行
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp前段时间我在企业文化中加了自己的最新感悟，就是“与奋斗者共享未来”，奋斗者的第一个标志就是有伟大梦想。大家都说“梦想还是要有的，万一实现了呢？”我并不认为只有实现梦想才算是成功，当别人的梦想是100分，而你的梦想是10000分，当你达到8000分然后失败了的时候，谁能说你没有成功呢？在活着的时候做了自己想做的事情，我认为这就是幸福。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp但从另一方面来讲，梦想如果只停留在脑海中那只能算空想，梦想需要落地、需要践行。在践行梦想的过程中，我们要不断地拓宽视野、不断地充实自己、不断地内向归因、反思自己。对于改变不了的事情，不抱怨、不埋怨，对于可以改变的事情，全心关注、全力以赴。付出总得需要时间来证明回报，而我们迈出的每一步都需要想明白三个问题——你拥有什么？你想得到什么？你愿意失去什么？
-在卓尚成为服装帝国的道路上，我们需要正确的同路人，换句话说，只要你是奋斗者，我们愿意与你共享未来！
-<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp整理自丁武杰董事长在“XIN力量”企业文化课上的讲话
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp服装道路，义无反顾
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp作为一个没有服装行业工作经验的创业者，能从下岗工人一路走到现在，我始终心怀感恩感谢这一路给我帮助、与我同行的所有人。很多人问我，是什么力量支撑我一直坚持服装行业，其实，也有很多服装行业的人转行，我始终坚持并不是因为我的兴趣和爱好，而是因为责任，是因为需要。如果说只有相信自己会成功的人才会成功，那我愿意做一个自信的人，我不怕被同行打败，因为他们是拿兴趣玩儿，而我是在拿命玩儿。
+                        内化于心，外化于行
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我能够走到今天其实是团队成就了我，我一直在思考我对团队的价值，因此，12年前我开始用心总结我们之所以成功和发展的关键，这也就是我们今天说得公司的企业文化。我常常觉得，很多学生时代学过的例如这样的知识如果没有实际用处就产生不了它应有的价值，而我们所说的以“只听对的，客户第一，成就他人”为核心价值观的企业文化却是在我们工作中每天都要用到的行动指南。企业文化不是简单的标语，它实实在在地存在于我们每天的工作中，只有将企业文化内化于心、外化于行，你才有可能成为被卓尚认可、被卓尚需要的同行者。
+                        践行梦想，与你同行
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp前段时间我在企业文化中加了自己的最新感悟，就是“与奋斗者共享未来”，奋斗者的第一个标志就是有伟大梦想。大家都说“梦想还是要有的，万一实现了呢？”我并不认为只有实现梦想才算是成功，当别人的梦想是100分，而你的梦想是10000分，当你达到8000分然后失败了的时候，谁能说你没有成功呢？在活着的时候做了自己想做的事情，我认为这就是幸福。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp但从另一方面来讲，梦想如果只停留在脑海中那只能算空想，梦想需要落地、需要践行。在践行梦想的过程中，我们要不断地拓宽视野、不断地充实自己、不断地内向归因、反思自己。对于改变不了的事情，不抱怨、不埋怨，对于可以改变的事情，全心关注、全力以赴。付出总得需要时间来证明回报，而我们迈出的每一步都需要想明白三个问题——你拥有什么？你想得到什么？你愿意失去什么？
+                        在卓尚成为服装帝国的道路上，我们需要正确的同路人，换句话说，只要你是奋斗者，我们愿意与你共享未来！
+                            <br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp整理自丁武杰董事长在“XIN力量”企业文化课上的讲话</p>
                     </div>
                   </div>
                 </div>
-                <div class="panel panel-default">
+                <div class="panel panel-default Liz-absolute" style="top:50%">
                   <div class="panel-heading" role="tab"  style="padding:0;height:auto" id="headingTwo">
                     <h4 class="panel-title">
                       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="jionUs panel panel-default panel-title text-center" style="height: 60px;">
                           <div class="Liz-cotainer">
-                              以终端运营为中心<span class="toBottonIcon"><img src="images/development/tobutton.png" alt=""></span>
+                              以终端运营为中心<span class="toBottonIcon Liz-none"><img src="images/development/tobutton.png" alt=""></span>
                           </div>
                       </div>
                       </a>
                     </h4>
                   </div>
                   <div id="collapseTwo" class="panel-collapse collapse padding-justify-20" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="Liz-container Liz-scroll" style="height:400px;overflow:auto;" >
+                    <div class="Liz-container Liz-scroll" style="height:440px;overflow:auto;" >
                         <p style="font-size: 16px;line-height: 30px;">
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们推行TOC（Theory of constraints瓶颈理论）已经5年了，起初我们运用于内部工厂管理和商品运作，今年我们也将重点延伸到供应链上游打造、研发系统和终端运营等领域。瓶颈理论并不是管理工具，它是一种思维，如果我们要让系统有更大的产出，必须找到制约系统发挥力量的瓶颈，倾尽资源打开瓶颈。对于卓尚来说，我们的瓶颈在于终端。如果顾客不能被吸引到终端门店，不能被我们的产品所打动，我们所做的一切努力都是白费。既然瓶颈在终端，一切与终端无关的行为均属浪费，既然我们要打破瓶颈，我们必须以终端运营为中心。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们要向所有的终端门店道歉，因为我们几乎从来没有真正关注过终端。对终端反馈的问题视而不见，对终端持续的抱怨置若罔闻，对真实存在的投诉避而不谈。还总是假装非常勤奋，不断地消耗组织的剩余价值。如果我们继续对这样的状况保持容忍，我们是在集体自杀。
-公司将采取三个举措来落实“以终端运营为中心”。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp首先，提高终端的地位。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp过去我们采用放权式的垂直管理，对问题逐级上报，组织层级繁多造成效率低下，我们在一级级地管理终端，现在我们让终端管理公司，让终端的问题直达公司决策层。我们成立了由我本人和极少数人组成的终端运营服务小组，这个小组每天收集和对接来自所有终端的建议、意见、问题和投诉，并在12小时内给予反馈，根据问题的类型指派专人限时完成；每周召开终端运营专题会议；每月这个小组要至少巡视一次终端；同时导入管理机制，把那些不能为终端解决问题的人淘汰出局。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp其次，提高终端员工薪酬福利。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp那些真正能创造价值的终端门店员工的全面薪酬应当达到市场的最高水平，我们有义务为终端门店设计不同于其他岗位的绩效与回报体系，让员工的基本诉求得到满足，让员工不为基本生活发愁，让奋斗者得到最高回报。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第三，引进终端人才。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp卓尚的终端必须是行业优秀人才的聚集地，是他们施展才华的最佳平台。尽管我们常年强调人才的重要性，但对终端人才的引进并没有太大作为，人才发展中心和各个业务部门都要深刻反思和改进。优秀人才将能帮助我们提升终端问题解决的能力，同时培养一线高手。
-为了让终端运营真正能成为中心，我们也以“规则化”“专业化”作为保障，过去我们讲价值观的东西比较多，但并不解决问题。以后我们还讲价值观，但更讲规则。以终端运营为中心就是我们的最高规则，认可这个规则，我们一起玩，不认可，请你去规则之外，我们无法同行。我们有坚定的信念让卓尚成为伟大的公司，讲规则是必要的保障，也只有讲规则才会无愧于18年来支持和相信卓尚的合作伙伴和顾客。“专业化”意味着所在的领域里你应当是专家，能说服我们，比我们高明，能做我们的老师。行业内的最佳做法是什么，最先进的理念是什么，如果你都不知道，你的专业值得怀疑。如果你做财务，就应当是最专业的财务，比组织中的任何人都专业，而且你还知道自己和组织外的专业人士的差距在哪里，如何弥补。以终端运营为中心，需要很多的专业人士。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp“以终端运营为中心”并不是对少数人的要求，也不是只对营销部门的要求，它是对卓尚所有部门的要求，无论你是财务部、商品部、人才发展中心还是研发部门，如果你从来没去过终端，不知道终端在做什么，不去考虑自己的工作和终端有什么关系，你肯定做不到以终端运营为中心。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我希望所有的卓尚员工，都能思考一个问题：我能为终端做什么？如果这个问题你无法回答，公司可能要对你重新定位。我们也要求各个部门的负责人同样思考这个问题，如果这个问题你的部门无法回答，为了更多数人和更长远的利益，公司应当裁撤这个部门，或者让能回答的人来负责这个部门。 </p>
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们推行TOC（Theory of constraints瓶颈理论）已经5年了，起初我们运用于内部工厂管理和商品运作，今年我们也将重点延伸到供应链上游打造、研发系统和终端运营等领域。瓶颈理论并不是管理工具，它是一种思维，如果我们要让系统有更大的产出，必须找到制约系统发挥力量的瓶颈，倾尽资源打开瓶颈。对于卓尚来说，我们的瓶颈在于终端。如果顾客不能被吸引到终端门店，不能被我们的产品所打动，我们所做的一切努力都是白费。既然瓶颈在终端，一切与终端无关的行为均属浪费，既然我们要打破瓶颈，我们必须以终端运营为中心。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们要向所有的终端门店道歉，因为我们几乎从来没有真正关注过终端。对终端反馈的问题视而不见，对终端持续的抱怨置若罔闻，对真实存在的投诉避而不谈。还总是假装非常勤奋，不断地消耗组织的剩余价值。如果我们继续对这样的状况保持容忍，我们是在集体自杀。
+                        公司将采取三个举措来落实“以终端运营为中心”。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp首先，提高终端的地位。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp过去我们采用放权式的垂直管理，对问题逐级上报，组织层级繁多造成效率低下，我们在一级级地管理终端，现在我们让终端管理公司，让终端的问题直达公司决策层。我们成立了由我本人和极少数人组成的终端运营服务小组，这个小组每天收集和对接来自所有终端的建议、意见、问题和投诉，并在12小时内给予反馈，根据问题的类型指派专人限时完成；每周召开终端运营专题会议；每月这个小组要至少巡视一次终端；同时导入管理机制，把那些不能为终端解决问题的人淘汰出局。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp其次，提高终端员工薪酬福利。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp那些真正能创造价值的终端门店员工的全面薪酬应当达到市场的最高水平，我们有义务为终端门店设计不同于其他岗位的绩效与回报体系，让员工的基本诉求得到满足，让员工不为基本生活发愁，让奋斗者得到最高回报。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第三，引进终端人才。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp卓尚的终端必须是行业优秀人才的聚集地，是他们施展才华的最佳平台。尽管我们常年强调人才的重要性，但对终端人才的引进并没有太大作为，人才发展中心和各个业务部门都要深刻反思和改进。优秀人才将能帮助我们提升终端问题解决的能力，同时培养一线高手。
+                        为了让终端运营真正能成为中心，我们也以“规则化”“专业化”作为保障，过去我们讲价值观的东西比较多，但并不解决问题。以后我们还讲价值观，但更讲规则。以终端运营为中心就是我们的最高规则，认可这个规则，我们一起玩，不认可，请你去规则之外，我们无法同行。我们有坚定的信念让卓尚成为伟大的公司，讲规则是必要的保障，也只有讲规则才会无愧于18年来支持和相信卓尚的合作伙伴和顾客。“专业化”意味着所在的领域里你应当是专家，能说服我们，比我们高明，能做我们的老师。行业内的最佳做法是什么，最先进的理念是什么，如果你都不知道，你的专业值得怀疑。如果你做财务，就应当是最专业的财务，比组织中的任何人都专业，而且你还知道自己和组织外的专业人士的差距在哪里，如何弥补。以终端运营为中心，需要很多的专业人士。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp“以终端运营为中心”并不是对少数人的要求，也不是只对营销部门的要求，它是对卓尚所有部门的要求，无论你是财务部、商品部、人才发展中心还是研发部门，如果你从来没去过终端，不知道终端在做什么，不去考虑自己的工作和终端有什么关系，你肯定做不到以终端运营为中心。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我希望所有的卓尚员工，都能思考一个问题：我能为终端做什么？如果这个问题你无法回答，公司可能要对你重新定位。我们也要求各个部门的负责人同样思考这个问题，如果这个问题你的部门无法回答，为了更多数人和更长远的利益，公司应当裁撤这个部门，或者让能回答的人来负责这个部门。 </p>
                     </div>
                   </div>
                 </div>
-                <div class="panel panel-default">
+                <div class="panel panel-default Liz-absolute" style="top:60%">
                   <div class="panel-heading" role="tab"  style="padding:0;height:auto" id="headingThree">
                     <h4 class="panel-title">
                       <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <div class="jionUs panel panel-default panel-title text-center" style="height: 60px;">
                           <div class="Liz-cotainer">
-                              以不变应万变<span class="toBottonIcon"><img src="images/development/tobutton.png" alt=""></span>
+                              以不变应万变<span class="toBottonIcon Liz-none"><img src="images/development/tobutton.png" alt=""></span>
                           </div>
                       </div>
                       </a>
                     </h4>
                   </div>
                   <div id="collapseThree" class="panel-collapse collapse padding-justify-20" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="Liz-container Liz-scroll" style="height:400px;overflow:auto;" >
+                    <div class="Liz-container Liz-scroll" style="height:440px;overflow:auto;" >
                         <p style="font-size: 16px;line-height: 30px;">
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司这几年发生了很多转变，产品风格在转型，渠道结构一直在升级，组织结构和人员一直在调整，对于很多同事来说，都是不小的挑战。尽管变化是卓尚的常态，但我仍然担心许多人把自己作为变化的受害者，并借此找到不作为的理由。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp面对变化的时候，一般会看到3类人：一类积极拥抱变化，思考如何在变化中做出贡献并且积极行动；另一类退而远之，把自己包裹起来以求安全。还有一类，或明或暗地抵触，不遗余力地散播负面信息。我们只需要第一类人，他们能看到变化所带来的机会。我们希望第二类人调整心态，闭上眼睛不代表别人看不见你，当你退而远之的时候，你离公司也越来越远。我们努力找出第三类人，让他们离开我们的队伍，因为他们基本上都是组织的消耗者，无所事事而且假装勤奋，丝毫不产生价值还最喜欢搬弄是非，如果你身边有这样的人，请一定告诉我们。分类不是为了贴标签，也不是非要指责某一类人，毕竟人人都有自由选择的权利，可是在同一家公司、相同的企业文化下，就应该拥有共同的思维和行为习惯，所以我们只是希望第三类人能找到他们的同类，否则我们会相互耽误。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp很多同事在心里想，公司一天到晚折腾干什么？请一定坚信我们的任何变化不是为了图新鲜，唯一的目的是得到更好的结果，为了满足更多数人更长远的需要。改变是不是一定成功？不一定，但不变的卓尚没有未来，跟着卓尚一起的员工、合作伙伴也没有未来。事实证明我们的大多数变化都是不成功的，但我们从不畏惧，因为即使不成功，我们还可以总结经验教训，在屡败屡战中锻炼自己。每一条流向大海的河流，没有一条是走直线的，我们要允许它有转折甚至倒退。我们从不遗憾变化失败，只遗憾这个过程吃了堑，却没长智。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp怎么才能在变化中“长智”？先想一想，公司为什么要变？对我有什么好的影响？我为什么不接受？别人为什么可以接受？我会不会有机会？我能做哪些？再问一问，对自己不知道的事问问身边的人，但是不听信和传播谣言，也问问自己可以在什么环节发挥价值。然后采取行动，把改变作为提高自己的机会，突破自己的舒适区，寻求其他人的支持，并且为变化提供帮助。这样，你不但能在变化中成长，更重要的是，你将学会驾驭转变，成为公司发展的推动力。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们一直提醒自己要像水一样，可以随时随地的改变形状，但从不改变性质。我们的供货模式可以改变，如果它不利于终端需要；供应商可以调整，如果它不能按时交付符合质量要求的产品；管理团队可以裁撤，如果它不能带领团队服务顾客；员工可以替换，如果他们不能创造价值；组织架构可以更改，如果它不利于业务发展……你不变可能没错，我们追求变化也没有错，但我们在一起可能错了。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp公司这几年发生了很多转变，产品风格在转型，渠道结构一直在升级，组织结构和人员一直在调整，对于很多同事来说，都是不小的挑战。尽管变化是卓尚的常态，但我仍然担心许多人把自己作为变化的受害者，并借此找到不作为的理由。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp面对变化的时候，一般会看到3类人：一类积极拥抱变化，思考如何在变化中做出贡献并且积极行动；另一类退而远之，把自己包裹起来以求安全。还有一类，或明或暗地抵触，不遗余力地散播负面信息。我们只需要第一类人，他们能看到变化所带来的机会。我们希望第二类人调整心态，闭上眼睛不代表别人看不见你，当你退而远之的时候，你离公司也越来越远。我们努力找出第三类人，让他们离开我们的队伍，因为他们基本上都是组织的消耗者，无所事事而且假装勤奋，丝毫不产生价值还最喜欢搬弄是非，如果你身边有这样的人，请一定告诉我们。分类不是为了贴标签，也不是非要指责某一类人，毕竟人人都有自由选择的权利，可是在同一家公司、相同的企业文化下，就应该拥有共同的思维和行为习惯，所以我们只是希望第三类人能找到他们的同类，否则我们会相互耽误。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp很多同事在心里想，公司一天到晚折腾干什么？请一定坚信我们的任何变化不是为了图新鲜，唯一的目的是得到更好的结果，为了满足更多数人更长远的需要。改变是不是一定成功？不一定，但不变的卓尚没有未来，跟着卓尚一起的员工、合作伙伴也没有未来。事实证明我们的大多数变化都是不成功的，但我们从不畏惧，因为即使不成功，我们还可以总结经验教训，在屡败屡战中锻炼自己。每一条流向大海的河流，没有一条是走直线的，我们要允许它有转折甚至倒退。我们从不遗憾变化失败，只遗憾这个过程吃了堑，却没长智。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp怎么才能在变化中“长智”？先想一想，公司为什么要变？对我有什么好的影响？我为什么不接受？别人为什么可以接受？我会不会有机会？我能做哪些？再问一问，对自己不知道的事问问身边的人，但是不听信和传播谣言，也问问自己可以在什么环节发挥价值。然后采取行动，把改变作为提高自己的机会，突破自己的舒适区，寻求其他人的支持，并且为变化提供帮助。这样，你不但能在变化中成长，更重要的是，你将学会驾驭转变，成为公司发展的推动力。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们一直提醒自己要像水一样，可以随时随地的改变形状，但从不改变性质。我们的供货模式可以改变，如果它不利于终端需要；供应商可以调整，如果它不能按时交付符合质量要求的产品；管理团队可以裁撤，如果它不能带领团队服务顾客；员工可以替换，如果他们不能创造价值；组织架构可以更改，如果它不利于业务发展……你不变可能没错，我们追求变化也没有错，但我们在一起可能错了。
 
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp18年来，我们一直在变化，但有一些事，我们从未改变：
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们的使命从未改变。我们前进的每一步，都要带动行业发展。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们的目标从未改变。每一个品牌要成为细分市场的第一品牌。
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们的价值观从未改变。我们为更多数人更长远的利益奋斗；为客户提供最好的产品和服务；成就我们的顾客、合作伙伴和每一位卓尚人。
-                        </p>
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp18年来，我们一直在变化，但有一些事，我们从未改变：
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们的使命从未改变。我们前进的每一步，都要带动行业发展。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们的目标从未改变。每一个品牌要成为细分市场的第一品牌。
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们的价值观从未改变。我们为更多数人更长远的利益奋斗；为客户提供最好的产品和服务；成就我们的顾客、合作伙伴和每一位卓尚人。
+                                                </p>
                     </div>
                   </div>
                 </div>
@@ -473,23 +477,6 @@
 
 
 <div class="section border-top" id="footer">
-    <div class="Liz-flex Liz-flex-align-center Liz-flex-justify-center" style="height:100px">
-        <div class="arr-left">
-            <img src="images/footer/left.png" alt="">
-        </div>
-        <div style="width: 159px;">
-            <ul id="carousel-wrap" class="text-center">
-                <a href="#" class="logImg"><img src="images/footer/logo1.png" alt=""></a>
-                <a href="#" class="logImg"><img src="images/footer/logo2.png" alt=""></a>
-                <a href="#" class="logImg"><img src="images/footer/logo3.png" alt=""></a>
-                <a href="#" class="logImg"><img src="images/footer/logo4.png" alt=""></a>
-                <a href="#" class="logImg"><img src="images/footer/logo5.png" alt=""></a>
-            </ul>
-        </div>
-        <div class="arr-right">
-            <img src="images/footer/right.png" alt="">
-        </div>
-    </div>
     <div class="section Liz-footebgDefault" style="height:100px">
         <hr>
         <div class="padding-justify-20 bgDefault text-center">
@@ -503,7 +490,7 @@
     </div>
 </div>
 
-
+<script src="http://172.19.14.16:8080/target/target-script-min.js#anonymous"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.headroom.min.js"></script>
 <script src="js/headroom.min.js"></script>
@@ -526,6 +513,7 @@
 
 <script type="text/javascript">
 window.onload = function() {
+     $('body').css('display','block');
     var constIndex=5;
     var slider = 'slider';
     var _slider = '#slider';

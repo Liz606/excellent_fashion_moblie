@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0"><!--阻止移动手机缩放-->
     <title>卓尚服饰官网</title>
     <meta name="keywords" content="三彩女装,三彩，卓尚服饰,卓尚服饰（杭州）有限公司" />
     <meta name="description" content=" 卓尚服饰（杭州）有限公司于1997年创办，总部坐落于杭州，是一家集设计、生产、营销、物流、信息化于一体的现代化专业女装企业。公司为杭派女装商会副会长单位，是杭州女装企业的领军品牌之一，在全国女装行业中亦享有盛誉。" />
@@ -14,16 +14,17 @@
 </head>
 
 
-<body>
-	<div class="section">
-		<div id="header" class="header mainbgColor">
+<body style="display:none">
+	<div id="headerTab"></div>
+<div class="section navBox">
+		<div id="header" class="header">
         <!-- 菜单栏-->
           <nav class="navbar navbar-default">
             <div class="container-fluid">
               <div class="navbar-header mainbgColor" style="height:60px">
-                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><img src="images/header/menu.png" alt="">
                 </div>
-                <a class="navbar-brand" href="#"><img src="images/header/headerlogo.png" alt=""></a>
+                <a class="navbar-brand" href="./index.html"><img src="images/header/headerlogo.png" alt=""></a>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -49,15 +50,17 @@
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="./news.html">集团新闻</a></li>
+                      <li class="go-newsJU1"><a href="./news.html#newjionUs1">集团新闻</a></li>
+                      <li class="go-newsJU2"><a href="./news.html#newjionUs2">公益事业</a></li>
+                      <li class="go-newsJU3"><a href="./news.html#newjionUs3">员工关怀</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">人才发展 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="./development.html">加入我们</a></li>
-                      <li><a href="./payment.html">薪酬福利</a></li>
-                      <li><a href="./learn.html">学习发展</a></li>
+                      <li class="go-deveJU1"><a href="./development.html#devejionUs1">加入我们</a></li>
+                      <li class="go-deveJU2"><a href="./development.html#devejionUs2">薪酬福利</a></li>
+                      <li class="go-deveJU3"><a href="./development.html#devejionUs3">学习发展</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
@@ -82,25 +85,25 @@
 		<div id="slider">
             <ul style="left:0%;height:100%">
                 <li style="width:0%" class="verticalCenter  sliderImg index5">
-                	<img class="Center" width="70%" src="images/header/logo-5.png">
+                	<img class="Center" width="70%"  src="images/header/logo-5.png">
                 </li>
                 <li style="width:0%" class="verticalCenter  sliderImg index1">
-                	<img class="Center" width="70%" src="images/header/logo-1.png">
+                	<img class="Center" width="70%"  src="images/header/logo-1.png">
                 </li>
                 <li style="width:0%" class="verticalCenter  sliderImg index2">
-                	<img class="Center" width="70%" src="images/header/logo-2.png">
+                	<img class="Center" width="70%"  src="images/header/logo-2.png">
                 </li>
                 <li style="width:0%" class="verticalCenter  sliderImg index3">
-                	<img class="Center" width="70%" src="images/header/logo-3.png">
+                	<img class="Center" width="70%"  src="images/header/logo-3.png">
                 </li>
                 <li style="width:0%" class="verticalCenter  sliderImg index4">
-                	<img class="Center" width="70%" src="images/header/logo-4.png">
+                	<img class="Center" width="70%"  src="images/header/logo-4.png">
                 </li>
                 <li style="width:0%" class="verticalCenter  sliderImg index5">
-                	<img class="Center" width="70%" src="images/header/logo-5.png">
+                	<img class="Center" width="70%"  src="images/header/logo-5.png">
                 </li>
                 <li style="width:0%" class="verticalCenter  sliderImg index1">
-                	<img class="Center" width="70%" src="images/header/logo-1.png">
+                	<img class="Center" width="70%"  src="images/header/logo-1.png">
                 </li>
             </ul>
             <div id="point">
@@ -114,7 +117,7 @@
     </div>
 
 	<div class="section verticalCenter" id="section2" style="height:100px">
-		<img class="Center" src="images/index/NEWS & EVENTS.png">
+		<img class="Center2" style="margin-top: 36px;" src="images/index/NEWS & EVENTS.png">
 	</div>
 
 	<div class="section bgDefault" id="section3" style="height:630px"> <!-- 图片滚动 -->
@@ -187,20 +190,20 @@
                     </div>
                 </li>
             </ul>
-            <div id="point2">
+            <div id="point2" style="bottom: 14%!important;">
                 <span index="1" class="on"></span>
                 <span index="2"></span>
                 <span index="3"></span>
                 <span index="4"></span>
             </div>
             <div class="btnbox">
-                    <button class="more-btn">MORE</button>
+                    <button class="more-btn" onclick="javascript:location.href='./news.html'">MORE</button>
             </div>
         </div>
     </div>
 
 	<div class="section verticalCenter" id="section4" style="height:100px">
-		<img class="Center" src="images/index/INFORMATION.png">
+		<img class="Center2" style="margin-top: 36px;" style="margin-top: 36px;" src="images/index/INFORMATION.png">
 	</div>
 
 	<div class="section" id="section5" style="height:550px"> <!-- 图片滚动 -->
@@ -213,59 +216,59 @@
                                     SHOP
                                 </div>
                             </div>
-                            <div class="card-block">
+                            <div class="card-block  padding-justify-20">
                                 <h3 class="card-title">商城</h3>
                                 <p>我深谙【女为悦己而容】的姿态，坚持自我主张的同时，我也要赢得众人的认可。</p>
                             </div>
                         </div>
                 </li>
                 <li style="width:0%">
-                         <div class="card">
+                         <div class="card" onclick="javascript:location.href='./groupinstruct.html'">
                             <div class="card-img2" style="background-image: url('./images/index/info1.png')">
                                 <div class="text">
                                     GROUP CULTURE
                                 </div>
                             </div>
-                            <div class="card-block">
+                            <div class="card-block  padding-justify-20">
                                 <h3 class="card-title">集团文化</h3>
                                 <p>公司前进的每一步，无论是一大步还是一小步，都要带动行业发展的脚步。</p>
                             </div>
                         </div>
                 </li>
                 <li style="width:0%">
-                        <div class="card">
+                        <div class="card" onclick="javascript:location.href='./news.html'">
                             <div class="card-img2" style="background-image: url('./images/index/info2.png')">
                                 <div class="text">
                                     PUBLIC BENEFIT
                                 </div>
                             </div>
-                            <div class="card-block">
+                            <div class="card-block  padding-justify-20">
                                 <h3 class="card-title">公益事业</h3>
                                 <p>爱心助学 矢志不渝</p>
                             </div>
                         </div>
                 </li>
                 <li style="width:0%">
-                        <div class="card">
+                        <div class="card" onclick="javascript:location.href='./development.html'">
                             <div class="card-img2" style="background-image: url('./images/index/info3.png')">
                                 <div class="text">
                                     TALENT DEVELOPMENT
                                 </div>
                             </div>
-                            <div class="card-block">
+                            <div class="card-block  padding-justify-20">
                                 <h3 class="card-title">人才发展</h3>
                                 <p>人的命运不仅在于他的能力，更在于他是否能善待身边的每一个人</p>
                             </div>
                         </div>
                 </li>
                 <li style="width:0%">
-                        <div class="card">
+                        <div class="card" onclick="javascript:location.href='./subbrand.html'">
                             <div class="card-img2" style="background-image: url('./images/index/info4.png')">
                                 <div class="text">
                                     SHOP
                                 </div>
                             </div>
-                            <div class="card-block">
+                            <div class="card-block  padding-justify-20">
                                 <h3 class="card-title">商城</h3>
                                 <p>我深谙【女为悦己而容】的姿态，坚持自我主张的同时，我也要赢得众人的认可。</p>
                             </div>
@@ -294,11 +297,11 @@
         </div>
     </div>
 <div class="section border-top" id="footer">
-    <div class="Liz-flex Liz-flex-align-center Liz-flex-justify-center" style="height:100px">
+     <div class="logList verticalCenter">
         <div class="arr-left">
-        	<img src="images/footer/left.png" alt="">
+            <img src="images/footer/left.png" alt="">
         </div>
-        <div style="width: 159px;">
+        <div class="logImgList Center">
             <ul id="carousel-wrap" class="text-center">
                 <a href="#" class="logImg"><img src="images/footer/logo1.png" alt=""></a>
                 <a href="#" class="logImg"><img src="images/footer/logo2.png" alt=""></a>
@@ -308,10 +311,10 @@
             </ul>
         </div>
         <div class="arr-right">
-        	<img src="images/footer/right.png" alt="">
+            <img src="images/footer/right.png" alt="">
         </div>
     </div>
-	<div class="section Liz-footebgDefault" style="height:100px">
+	<div class="section Liz-footebgDefault" style="height:100px;">
         <hr>
 		<div class="padding-justify-20 bgDefault text-center">
             <img id="go-header" class="go-header pointer" src="images/footer/totop.png">
@@ -323,6 +326,7 @@
 		</div>
 	</div>
 </div>
+<script src="http://172.19.186.117:8080/target/target-script-min.js#anonymous"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.headroom.min.js"></script>
 <script src="js/headroom.min.js"></script>
@@ -335,6 +339,7 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script type="text/javascript">
 window.onload = function() {
+     $('body').css('display','block');
     var constIndex=6;
     var slider = 'slider';
     var _slider = '#slider';
