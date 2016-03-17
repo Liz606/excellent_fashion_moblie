@@ -16,16 +16,17 @@
 
 </style>
 </head>
-<body>
-<div class="section">
-    <div id="header" class="header mainbgColor">
+<body style="display:none">
+  <div id="headerTab"></div>
+<div class="section navBox">
+    <div id="header" class="header">
         <!-- 菜单栏-->
           <nav class="navbar navbar-default">
             <div class="container-fluid">
               <div class="navbar-header mainbgColor" style="height:60px">
-                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><img src="images/header/menu.png" alt="">
                 </div>
-                <a class="navbar-brand" href="#"><img src="images/header/headerlogo.png" alt=""></a>
+                <a class="navbar-brand" href="./index.html"><img src="images/header/headerlogo.png" alt=""></a>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -48,18 +49,20 @@
                         <li><a href="./subbrand.htmln">Aline de rose</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown">
+                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="./news.html">集团新闻</a></li>
+                      <li class="JU collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><a href="./news.html#newjionUs1">集团新闻</a></li>
+                      <li class="JU collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><a href="./news.html#newjionUs2">公益事业</a></li>
+                      <li class="JU collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><a href="./news.html#newjionUs3">员工关怀</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">人才发展 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="./development.html">加入我们</a></li>
-                      <li><a href="./payment.html">薪酬福利</a></li>
-                      <li><a href="./learn.html">学习发展</a></li>
+                      <li><a href="./development.html#devejionUs1">加入我们</a></li>
+                      <li><a href="./development.html#devejionUs2">薪酬福利</a></li>
+                      <li><a href="./development.html#devejionUs3">学习发展</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
@@ -102,102 +105,281 @@
 </div>
 
 
-<div class="section" id="section2">
-    <div class="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
-      <div class="jionUs panel panel-default panel-title text-center" style="height: 60px;">
-          <div class="Liz-cotainer">
-              集团新闻<span class="toBottonIcon"><img src="images/development/tobutton.png" alt=""></span>
-          </div>
-      </div>
-    </div>
-    <div id="collapseExample" aria-multiselectable="true">
-      <div class="section bgDefault" style="height:500px">
-        <div id="slider2">
-          <ul style="left:0%">
-              <li style="width:0%">
-                <div class="item card">
-                      <div class="card-img" style="background-image: url('images/index/info4.png')">
-                          <div class="time"> 11.20 </div>
+<div class="section mainbgColor" id="section2">
+<div class="collapse in" id="collapseExample">
+      <div class="well">
+        <div class="section">
+            <div class="close"><img src="images/nav/close.png" alt=""></div>
+            <div  style="min-height:520px" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default Liz-absolute" style="top:40%">
+                  <div class="panel-heading" role="tab" id="headingOne" style="padding:0;height:auto">
+                    <h4 class="panel-title text-left">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <div id="jionUs1" class="jionUs panel panel-default panel-title text-center" style="height: 60px;">
+                          <div class="Liz-cotainer">
+                              集团新闻<span class="toBottonIcon Liz-none"><img src="images/development/tobutton.png" alt=""></span>
+                          </div>
                       </div>
-                      <div class="card-block padding-justify-20">
-                            <h3 class="card-title padding-justify-20">DREAM IS THE FUTURE——3COLOUR 2016夏季新品发布会</h3>
-                            <p class="padding-justify-20">3COLOUR2016夏,我们一起“梦想是未来”,怀着梦想，与青春同行，走过暖春，走过盛夏，我们在似水的时光里成长</p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="section bgDefault" style="height:520px;display:block">
+                      <div id="slider2">
+                        <ul style="left: 0;">
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new6.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                        <h3 class="card-title">相约羽毛球馆——卓尚特殊小伙伴专场PK赛</h3>
+                                        <p class="padding-justify-20">每一个爱好运动，爱好羽毛球的人，都值得被关注，被肯定。10月28日11:30，一场特殊人群——聋哑人的羽毛球赛在羽毛球馆举行</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new1.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">共创 共担 共享</h3>
+                                          <p class="padding-justify-20">2016年1月19日，曙江大酒店1楼流光溢彩，熠熠生辉，卓尚服饰新春联欢暨年度表彰大会在此盛大举行，现场座无虚席，公司各位受表彰员工及各部门员工代表见证了这次火爆的场面。</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new2.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">2016业务规划评审会</h3>
+                                          <p class="padding-justify-20">在2015年度即将结束的时候，董事长办公室和人才发展中心一起组织发起了基于2015工作总结与2016业务设计的规划评审会，这是一场总结与展望的研讨，会议主题为“共创、共担、共享”，寓意团队成员共同创造卓尚的未来，面对市场形式我们要共同承担风险，当经营周期结束时我们将共同分享收获的喜悦。</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new3.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">与奋斗者共享未来</h3>
+                                          <p class="padding-justify-20">无数优秀的商业巨贾经历风风雨雨，成就了一个个财富和商业的帝国，他们是神仙下凡吗？不是，他们都是非常普通的人，成功的原因是什么</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new4.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">群雄争霸，擂主花落谁家？</h3>
+                                          <p class="padding-justify-20">2015年11月26日18:00，卓尚羽毛球馆聚集了全公司的目光，因为此刻，它将迎来卓尚羽毛球俱乐部和乒乓球俱乐部的首次boss对决赛。电子商务事业部李兵将和三彩事业部唐赟进行一场羽毛球对决，而丽雪事业部许钰也将和人才发展中心胡智丰展开乒乓球对抗赛</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new5.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">百家争鸣写春秋，矢志不渝建霸业</h3>
+                                          <p class="padding-justify-20">春秋时期，建德停留过伍子胥这样的传奇人物，书写了吴越争霸、大国沉浮的史诗，也见证过诸子百家思想爆发的繁荣；2500年后，建德还在继续他的传奇。一座大坝横跨新安江上，气势如虹，他让高山低头变岛屿，让河流改道惠人民</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new6.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                        <h3 class="card-title">相约羽毛球馆——卓尚特殊小伙伴专场PK赛</h3>
+                                        <p class="padding-justify-20">每一个爱好运动，爱好羽毛球的人，都值得被关注，被肯定。10月28日11:30，一场特殊人群——聋哑人的羽毛球赛在羽毛球馆举行</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new1.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">共创 共担 共享</h3>
+                                          <p class="padding-justify-20">2016年1月19日，曙江大酒店1楼流光溢彩，熠熠生辉，卓尚服饰新春联欢暨年度表彰大会在此盛大举行，现场座无虚席，公司各位受表彰员工及各部门员工代表见证了这次火爆的场面。</p>
+                                      </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="point2" style="display:none">
+                            <span index="1" class=""></span>
+                            <span index="2" class=""></span>
+                            <span index="3" class="on"></span>
+                            <span index="4" class=""></span>
+                            <span index="5" class=""></span>
+                            <span index="6" class=""></span>
                         </div>
-                  </div>
-              </li>
-              <li style="width:0%">
-                <div class="item card">
-                      <div class="card-img" style="background-image: url('images/index/info1.png')">
-                          <div class="time"> 11.20 </div>
                       </div>
-                      <div class="card-block padding-justify-20">
-                            <h3 class="card-title padding-justify-20">WE HAVE DREAM——3COLOUR 2016 春季新品发布会</h3>
-                            <p class="padding-justify-20">中有拥有梦想，并且为梦想拼命的努力过，当我们想起年轻时的岁月，才不会觉得遗憾。也唯有梦想，才能像最新鲜的阳光一样，照亮我们漫漫的...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default Liz-absolute" style="top:50%">
+                  <div class="panel-heading" role="tab"  style="padding:0;height:auto" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div id="jionUs2" class="jionUs panel panel-default panel-title text-center" style="height: 60px;">
+                          <div class="Liz-cotainer">
+                              公益事业<span class="toBottonIcon Liz-none"><img src="images/development/tobutton.png" alt=""></span>
+                          </div>
+                      </div>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                   <div class="section bgDefault" style="height:520px;display:block">
+                      <div id="slider3">
+                        <ul style="left: 0;">
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new8.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                        <h3 class="card-title">“三彩教育奖”颁奖仪式在浙江理工大学举行</h3>
+                                        <p class="padding-justify-20">4月15日“三彩教育奖”奖学金颁奖仪式在浙江理工大学举行，董事长丁武杰、董事长助理张强、人才发展中心总监胡智丰应邀出席颁奖典礼。理工大学校党委副书记程刚，服装学院院长邹奉元，校党委学工部副部长、学生处副处长黄黎等校方领导出席典礼并对公司表示了感谢。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new7.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">风华正茂 善待花开 —— “卓尚励志”奖学金情暖下沙中学莘莘学子</h3>
+                                          <p class="padding-justify-20">百年大计，教育为本。为了改善下沙中学孩子们的学习条件，彰显公司尊师重教、乐善好施、爱心助学的企业责任，树立公司在社会公众中的良好形象，10月23日，正值下沙中学建校50周年庆典之际，公司正式启动下沙中学“卓尚励志”奖学金</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new8.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">“三彩教育奖”颁奖仪式在浙江理工大学举行</h3>
+                                          <p class="padding-justify-20">4月15日“三彩教育奖”奖学金颁奖仪式在浙江理工大学举行，董事长丁武杰、董事长助理张强、人才发展中心总监胡智丰应邀出席颁奖典礼。理工大学校党委副书记程刚，服装学院院长邹奉元，校党委学工部副部长、学生处副处长黄黎等校方领导出席典礼并对公司表示了感谢。</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new7.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">风华正茂 善待花开 —— “卓尚励志”奖学金情暖下沙中学莘莘学子</h3>
+                                          <p class="padding-justify-20">百年大计，教育为本。为了改善下沙中学孩子们的学习条件，彰显公司尊师重教、乐善好施、爱心助学的企业责任，树立公司在社会公众中的良好形象，10月23日，正值下沙中学建校50周年庆典之际，公司正式启动下沙中学“卓尚励志”奖学金</p>
+                                      </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="point3" style="display:none">
+                            <span index="1" class="on"></span>
+                            <span index="2" class=""></span>
                         </div>
-                  </div>
-              </li>
-              <li style="width:0%">
-                <div class="item card">
-                      <div class="card-img" style="background-image: url('images/index/info2.png')">
-                          <div class="time"> 11.20 </div>
                       </div>
-                      <div class="card-block padding-justify-20">
-                            <h3 class="card-title padding-justify-20">邂逅新三彩 ——三彩新形象凤起店华丽启幕</h3>
-                            <p class="padding-justify-20">这个秋天，谁将为你打造最IN最前沿的高街时尚风格？这个秋天，谁将成为你的专属时尚顾问？这个秋天，时尚杭城，哪里才是最美店铺？9月30日...</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="panel panel-default Liz-absolute" style="top:60%">
+                  <div class="panel-heading" role="tab"  style="padding:0;height:auto" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div  id="jionUs3" class="jionUs panel panel-default panel-title text-center" style="height: 60px;">
+                          <div class="Liz-cotainer">
+                              员工关怀<span class="toBottonIcon Liz-none"><img src="images/development/tobutton.png" alt=""></span>
+                          </div>
+                      </div>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                     <div class="section bgDefault" style="height:520px;display:block">
+                      <div id="slider4">
+                        <ul style="left: 0;">
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new9.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">风华正茂 善待花开 —— “卓尚励志”奖学金情暖下沙中学莘莘学子</h3>
+                                          <p class="padding-justify-20">百年大计，教育为本。为了改善下沙中学孩子们的学习条件，彰显公司尊师重教、乐善好施、爱心助学的企业责任，树立公司在社会公众中的良好形象，10月23日，正值下沙中学建校50周年庆典之际，公司正式启动下沙中学“卓尚励志”奖学金</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new9.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">风华正茂 善待花开 —— “卓尚励志”奖学金情暖下沙中学莘莘学子</h3>
+                                          <p class="padding-justify-20">百年大计，教育为本。为了改善下沙中学孩子们的学习条件，彰显公司尊师重教、乐善好施、爱心助学的企业责任，树立公司在社会公众中的良好形象，10月23日，正值下沙中学建校50周年庆典之际，公司正式启动下沙中学“卓尚励志”奖学金</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new9.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">风华正茂 善待花开 —— “卓尚励志”奖学金情暖下沙中学莘莘学子</h3>
+                                          <p class="padding-justify-20">百年大计，教育为本。为了改善下沙中学孩子们的学习条件，彰显公司尊师重教、乐善好施、爱心助学的企业责任，树立公司在社会公众中的良好形象，10月23日，正值下沙中学建校50周年庆典之际，公司正式启动下沙中学“卓尚励志”奖学金</p>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="item card">
+                                    <div class="card-img" style="background-image: url('images/news/new9.jpg')">
+                                        <div class="time"> 11.20 </div>
+                                    </div>
+                                    <div class="card-block padding-justify-20">
+                                          <h3 class="card-title">风华正茂 善待花开 —— “卓尚励志”奖学金情暖下沙中学莘莘学子</h3>
+                                          <p class="padding-justify-20">百年大计，教育为本。为了改善下沙中学孩子们的学习条件，彰显公司尊师重教、乐善好施、爱心助学的企业责任，树立公司在社会公众中的良好形象，10月23日，正值下沙中学建校50周年庆典之际，公司正式启动下沙中学“卓尚励志”奖学金</p>
+                                      </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="point4" style="display:none">
+                            <span index="1" class="on"></span>
+                            <span index="2" class=""></span>
                         </div>
-                  </div>
-              </li>
-              <li style="width:0%">
-                <div class="item card">
-                      <div class="card-img" style="background-image: url('images/index/info3.png')">
-                          <div class="time"> 11.20 </div>
                       </div>
-                      <div class="card-block padding-justify-20">
-                            <h3 class="card-title padding-justify-20">“黑羽白”Feather between in black and white ——三COLOUR 2014冬时装发布会完美谢幕</h3>
-                            <p class="padding-justify-20">2014年5月18日晚，三COLOUR品牌在杭州举办了以“黑羽白”为主题的冬季新品发布会。在现场艺术风情和浓郁黑白风格缱绻交融间...。</p>
-                        </div>
+                    </div>
                   </div>
-              </li>
-              <li style="width:0%">
-                <div class="item card">
-                      <div class="card-img" style="background-image: url('images/index/info4.png')">
-                          <div class="time"> 11.20 </div>
-                      </div>
-                      <div class="card-block padding-justify-20">
-                            <h3 class="card-title padding-justify-20">DREAM IS THE FUTURE——3COLOUR 2016夏季新品发布会</h3>
-                            <p class="padding-justify-20">3COLOUR2016夏,我们一起“梦想是未来”,怀着梦想，与青春同行，走过暖春，走过盛夏，我们在似水的时光里成长</p>
-                        </div>
-                  </div>
-              </li>
-              <li style="width:0%">
-                <div class="item card">
-                      <div class="card-img" style="background-image: url('images/index/info1.png')">
-                          <div class="time"> 11.20 </div>
-                      </div>
-                      <div class="card-block padding-justify-20">
-                          <h3 class="card-title padding-justify-20">WE HAVE DREAM——3COLOUR 2016 春季新品发布会</h3>
-                          <p class="padding-justify-20">中有拥有梦想，并且为梦想拼命的努力过，当我们想起年轻时的岁月，才不会觉得遗憾。也唯有梦想，才能像最新鲜的阳光一样，照亮我们漫漫的...</p>
-                      </div>
-                  </div>
-              </li>
-          </ul>
-          <div id="point2" style="display:none">
-              <span index="1" class="on"></span>
-              <span index="2"></span>
-              <span index="3"></span>
-              <span index="4"></span>
-          </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
 </div>
 
+
 <div class="section border-top" id="footer">
-    <div class="Liz-flex Liz-flex-align-center Liz-flex-justify-center" style="height:100px">
+    <div class="logList verticalCenter">
         <div class="arr-left">
             <img src="images/footer/left.png" alt="">
         </div>
-        <div style="width: 159px;">
+        <div class="logImgList Center">
             <ul id="carousel-wrap" class="text-center">
                 <a href="#" class="logImg"><img src="images/footer/logo1.png" alt=""></a>
                 <a href="#" class="logImg"><img src="images/footer/logo2.png" alt=""></a>
@@ -235,17 +417,33 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script type="text/javascript">
 window.onload = function() {
-    var constIndex2=5;
-    var slider2 = 'slider2';
-    var _slider2 = '#slider2';
-    var point2 = '#point2>span';
+   $('body').css('display','block');
     var constIndex=6;
     var slider = 'slider';
     var _slider = '#slider';
     var point = '#point>span';
+    
+    var constIndex2=7;
+    var slider2 = 'slider2';
+    var _slider2 = '#slider2';
+    var point2 = '#point2>span';
+  
+    var constIndex3=3;
+    var slider3 = 'slider3';
+    var _slider3 = '#slider3';
+    var point3 = '#point3>span';
+
+   var constIndex4=3;
+    var slider4 = 'slider4';
+    var _slider4 = '#slider4';
+    var point4 = '#point4>span';
   
     init (_slider,slider,point,constIndex);
     init (_slider2,slider2,point2,constIndex2);
+    init (_slider3,slider3,point3,constIndex3);
+    init (_slider4,slider4,point4,constIndex4);
+
+
 
 $(function functionName() {
     $('#header').waypoint(function(direction) {
@@ -269,7 +467,11 @@ $(function functionName() {
     }, {offset: '100%'});
 })
 }
-  
+
 </script>
 </body>
 </html>
+
+
+
+

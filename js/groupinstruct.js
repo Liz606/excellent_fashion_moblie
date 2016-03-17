@@ -135,7 +135,7 @@ $(function() {
 
         li.click(function () {
             var text = timeData[index][1];
-            var offset = -120 * index;
+            var offset = -132 * index;
             $('.time-label').text(text);
             $('.time-years').css('left', offset);
             $('.time-year').filter('.active')
@@ -144,6 +144,6 @@ $(function() {
         })
     })
 
-    $('.time-years').width(timeData.length * 120);
+    $('.time-years').width(timeData.length * 132);
     $('.time-year:eq(0)').trigger('click');
 })

@@ -2,12 +2,11 @@
     	var animated = false;
     	var timer;
     	var index = 1; //记录点击
-    	var sliderWidth=$(_super).width();
+    	var sliderWidth=$(window).width();
     	var __super = document.getElementById(__super);
     	var Children = getChild(__super);
     	var _sub = Children[0];
-    	var direction= "horizontal",//滑动的方向 horizontal,vertical,
-    		start={},
+    	var start={},
     		current={};
     	var _point=$(_point);
     	var arr={};
@@ -18,68 +17,35 @@
         })
     	$(_super).on('touchstart','',pageStart);
     	$(_super).on('touchmove','',pageMove);
-    	$(_super).on('touchend','',pageEnd);
     	_point[0].className = 'on';
     	/*function*/
     	autoPlay(sliderWidth);
     	function pageMove(e)
     		{
-    			e.preventDefault();
+              if(event.targetTouches.length > 1 || event.scale && event.scale !== 1) return;//当屏幕有多个touch或者页面被缩放过，就不执行move操作
+                var touch = event.targetTouches[0];//touches数组对象获得屏幕上所有的touch，取第一个touch
+                endPos = {x:touch.pageX - startPos.x,y:touch.pageY - startPos.y};
+                isScrolling = Math.abs(endPos.x) < Math.abs(endPos.y) ? 1:0; //isScrolling为1时，表示纵向滑动，0为横向滑动
+                if(isScrolling === 0){
+                    event.preventDefault(); //阻止触摸事件的默认行为，即阻止滚屏
+                    console.log("startPos.x:"+startPos.x);
+                    console.log("touch.pageX:"+touch.pageX);
+                    if(touch.pageX-startPos.x<0){
+                        Arrow_r(sliderWidth);
+                      }else{
+                        Arrow_l(sliderWidth);
+                    }
+                }
     		}
     	//pageStart
     	function pageStart(e){
-    		console.log('pageStart');
-    		stopAuto();
-    		// alert('pageStart');
-    		if(start.active) return;
-    	    if( e.originalEvent.touches.length < 2 ) {
-    	      start.x = e.originalEvent.touches[0].pageX;
-    	      start.y = e.originalEvent.touches[0].pageY;
-    	      start.when = new Date().getTime();
-    	      start.active = true;
-    	    }
+            var touch = event.targetTouches[0]; //touches数组对象获得屏幕上所有的touch，取第一个touch
+            startPos = {x:touch.pageX,y:touch.pageY,time:+new Date}; //取第一个touch的坐标值
+            isScrolling = 0; //这个参数判断是垂直滚动还是水平滚动
+            __super.addEventListener('touchmove',this,false);
+            __super.addEventListener('touchend',this,false);
+
     	}
-    	//pageEnd
-    	function pageEnd(e){
-    	  	// alert('pageEnd');
-    	  	console.log('pageEnd');
-    	  	autoPlay(sliderWidth)
-    		current.x = e.originalEvent.changedTouches[0].pageX;         
-    		current.y = e.originalEvent.changedTouches[0].pageY;     
-        	start.active = false;	
-        	console.log(isSwipe(e));
-        	if(isSwipe(e) ){
-        		 if (direction == "horizontal"){
-        		 	console.log('horizontal');
-    		    	 if(current.x-start.x<0){
-    	    			Arrow_r(sliderWidth);
-    	    		  }else{
-    	    			Arrow_l(sliderWidth);
-    	    		}
-    	    	}else{
-    	    		console.log('!horizontal');
-    		    	if(current.y-start.y<0){
-    	    			Arrow_r(sliderWidth);
-    	    		}else{
-    	    			Arrow_l(sliderWidth);
-    	    		}
-    	    	}
-        	}	
-    	}
-    	//是否到达滑动的条件
-    	function isSwipe(e) {
-    	    var duration = new Date().getTime()-start.when;
-    	    var xdist;
-    	    if (direction == "horizontal") {
-    	    	 xdist    = current.x - start.x;
-    	    	}else{
-    	    	 xdist    = current.y - start.y;
-    	    	}
-    	    console.log("xdist:"+xdist);
-    	    console.log('duration:'+duration);
-    	    console.log('Math.abs( xdist ):'+Math.abs( xdist ));
-    	    return duration < 300 && 1 < Math.abs( xdist );
-    	}	
         function Arrow_r(sw) {
         	console.log('Arrow_r'+index);
             if (!animated) {

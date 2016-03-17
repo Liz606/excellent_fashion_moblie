@@ -1,4 +1,5 @@
-    $(".panel-heading").click( function () {
+
+$(".panel-heading").click( function () {
         if ($(this).hasClass("mainbgColor")) {
             $(this).toggleClass("mainbgColor");
         }else{

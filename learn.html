@@ -16,16 +16,17 @@
 
 </style>
 </head>
-<body>
-<div class="section">
-    <div id="header" class="header mainbgColor">
+<body style="display:none">
+  <div id="headerTab"></div>
+<div class="section navBox">
+   <div id="header" class="header">
         <!-- 菜单栏-->
           <nav class="navbar navbar-default">
             <div class="container-fluid">
               <div class="navbar-header mainbgColor" style="height:60px">
-                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><img src="images/header/menu.png" alt="">
                 </div>
-                <a class="navbar-brand" href="#"><img src="images/header/headerlogo.png" alt=""></a>
+                <a class="navbar-brand" href="./index.html"><img src="images/header/headerlogo.png" alt=""></a>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -51,15 +52,17 @@
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="./news.html">集团新闻</a></li>
+                      <li class="go-newsJU1"><a href="./news.html#newjionUs1">集团新闻</a></li>
+                      <li class="go-newsJU2"><a href="./news.html#newjionUs2">公益事业</a></li>
+                      <li class="go-newsJU3"><a href="./news.html#newjionUs3">员工关怀</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">人才发展 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="./development.html">加入我们</a></li>
-                      <li><a href="./payment.html">薪酬福利</a></li>
-                      <li><a href="./learn.html">学习发展</a></li>
+                      <li class="go-deveJU1"><a href="./development.html#devejionUs1">加入我们</a></li>
+                      <li class="go-deveJU2"><a href="./development.html#devejionUs2">薪酬福利</a></li>
+                      <li class="go-deveJU3"><a href="./development.html#devejionUs3">学习发展</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
@@ -138,19 +141,28 @@
                 </div>
                 
             </div>
+            
             <div class="text-center">
               <img src="images/learn/tree.png" style="width: 100%;" alt="" />
           </div>
+          <div class="panel-body Liz-container">
+              <p>践行梦想，与你同行
+              <br>前段时间我在企业文化中加了自己的最新感悟，就是“与奋斗者共享未来”，奋斗者的第一个标志就是有伟大梦想。大家都说“梦想还是要有的，万一实现了呢？”我并不认为只有实现梦想才算是成功，当别人的梦想是100分，而你的梦想是10000分，当你达到8000分然后失败了的时候，谁能说你没有成功呢？在活着的时候做了自己想做的事情，我认为这就是幸福。
+              但从另一方面来讲，梦想如果只停留在脑海中那只能算空想，梦想需要落地、需要践行。在践行梦想的过程中，我们要不断地拓宽视野、不断地充实自己、不断地内向归因、反思自己。对于改变不了的事情，不抱怨、不埋怨，对于可以改变的事情，全心关注、全力以赴。付出总得需要时间来证明回报，而我们迈出的每一步都需要想明白三个问题——你拥有什么？你想得到什么？你愿意失去什么？
+              <br>
+              <br>在卓尚成为服装帝国的道路上，我们需要正确的同路人，换句话说，只要你是奋斗者，我们愿意与你共享未来！
+            </p>
+            </div>
        </div>
     </div>
 </div>
 
 <div class="section border-top" id="footer">
-    <div class="Liz-flex Liz-flex-align-center Liz-flex-justify-center" style="height:100px">
+    <div class="logList verticalCenter">
         <div class="arr-left">
             <img src="images/footer/left.png" alt="">
         </div>
-        <div style="width: 159px;">
+        <div class="logImgList Center">
             <ul id="carousel-wrap" class="text-center">
                 <a href="#" class="logImg"><img src="images/footer/logo1.png" alt=""></a>
                 <a href="#" class="logImg"><img src="images/footer/logo2.png" alt=""></a>
@@ -188,6 +200,7 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script type="text/javascript">
 window.onload = function() {
+   $('body').css('display','block');
     var constIndex=6;
     var slider = 'slider';
     var _slider = '#slider';
