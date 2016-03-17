@@ -23,7 +23,6 @@ $('.navbar-header').children().first().click(function(e) {
         $(this).children().attr('src',menu);
     }
 })
-
 $('.navbar-header').next().children().children().children().filter('.dropdown-menu').children().click(function(e) {
     var menu='images/header/menu.png';
         $('.navbar-header').children().first().children().attr('src',menu);
