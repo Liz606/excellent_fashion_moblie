@@ -113,13 +113,12 @@
                         <img src="images/subbrand/home.png" alt="">
                     </a></li>
                     <li class="text-center weixinIco">
-                        <div class="weixinIco2 Liz-none"></div>
+                        <div class="weixin Liz-none">微信公众号：*******12345</div>
                         <a href="weixin://">
                             <img src="images/subbrand/weixin.png" alt="">
                         </a>
                     </li>
                     <li class="text-left tianmaoIco">
-                        <div class="tianmaoIco2 Liz-none"></div>
                         <a href="https://threecolour.tmall.com/">
                             <img src="images/subbrand/tianmao.png" alt="">
                         </a>
@@ -167,7 +166,10 @@ window.onload = function() {
     var point = '#point>span';
   
     init (_slider,slider,point,constIndex);
-     $(function functionName() {
+    $('.weixinIco').click(function(e) {
+        $('.weixin').toggleClass("Liz-none");
+    })
+    $(function functionName() {
     $('#header').waypoint(function(direction) {
         if (direction === 'down') {
             $('#header .overlayer').removeClass('active');
