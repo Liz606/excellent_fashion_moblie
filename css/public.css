@@ -370,6 +370,7 @@ a, a:visited, a:focus, a:hover {
     width: 70%;
     top: 50%;
     left: 50%;
+    z-index: 10000;
     -webkit-transform: translateY(-50%) translateX(-50%);
             transform: translateY(-50%) translateX(-50%);
 }
@@ -581,6 +582,12 @@ a, a:visited, a:focus, a:hover {
         position: absolute;
     cursor: pointer;
 }
+
+
+
+
+
+
 #slider,#slider2 ,#slider3,#slider4{
     width: 100%;
     height: 100%;
@@ -589,22 +596,28 @@ a, a:visited, a:focus, a:hover {
     overflow: hidden;
     -webkit-user-select: none;
 }
-
-#slider ul,#slider2 ul,#slider3 ul,#slider4 ul {
-    width: 700%;
-    padding-left: 0;
-    position: absolute;
-}
-
-#slider ul li,#slider2 ul li,#slider3 ul li,#slider4 ul li {
-    float: left;
-}
-
 .sliderImg {
     width: 100%;
     height: 100%;
 }
-#point,#point2,#point3,#point4 {
+#sliderBox1,#sliderBox2,#sliderBox3,#sliderBox4{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 0;
+    position: absolute;
+}
+#sliderBox1>li,#sliderBox2>li,#sliderBox3>li,#sliderBox4>li{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    float: none; 
+    display: block; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+}
+#point1,#point2,#point3,#point4  {
     position: absolute;
     display: inline-block;
     bottom: 25px;
@@ -612,10 +625,10 @@ a, a:visited, a:focus, a:hover {
     -webkit-transform: translateX(-56%);
     transform: translateX(-56%);
     font-size: 60px;
-    z-index: 2;
+    z-index: 1000;
 }
 
-#point span,#point2 span,#point3 span,#point4 span {
+#point1 span,#point2 span,#point3 span,#point4 span{
     float: left;
     height: 8px;
     width: 8px;
@@ -625,7 +638,7 @@ a, a:visited, a:focus, a:hover {
     margin-left: 10px;
 }
 
-#point .on,#point2 .on,#point3 .on,#point4 .on {
+#point1 .on,#point2 .on,#point3 .on,#point4 .on{
     background: #ffffff;
 }
 
@@ -757,16 +770,16 @@ a, a:visited, a:focus, a:hover {
     background-image: url("../images/header/bg1.jpg");
 }
 .public2{
-    background-image: url("../images/header/bg2.png");
+    background-image: url("../images/header/bg2.jpg");
 }
 .public3{
-    background-image: url("../images/header/bg3.png");
+    background-image: url("../images/header/bg3.jpg");
 }
 .public4{
-    background-image: url("../images/header/bg4.png");
+    background-image: url("../images/header/bg4.jpg");
 }
 .public5{
-    background-image: url("../images/header/bg5.png");
+    background-image: url("../images/header/bg5.jpg");
 }
 
 /*内容从下往上滑出*/
@@ -822,9 +835,6 @@ a, a:visited, a:focus, a:hover {
     background: #44bcbc;
     border-bottom: 1px solid transparent;
 }
- .collapse {
-    display: none;
-}
 .panel-title {
     margin-top: 0;
     margin-bottom: 0;
@@ -846,9 +856,6 @@ a, a:visited, a:focus, a:hover {
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
     border-top-color: #ddd;
 }
-.collapse.in {
-    display: block;
-}
 .panel-heading:hover {
     color: #FFFFFF;
     text-transform: capitalize;
@@ -865,7 +872,7 @@ a, a:visited, a:focus, a:hover {
     font-size: 16px;
     line-height: 30px;
 }
-.close{
+.close,.subclose{
     position: absolute;
     top: 20px;
     right: 20px;

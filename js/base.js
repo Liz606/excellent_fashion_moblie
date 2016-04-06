@@ -23,6 +23,7 @@ $('.navbar-header').children().first().click(function(e) {
         $(this).children().attr('src',menu);
     }
 })
+
 $('.navbar-header').next().children().children().children().filter('.dropdown-menu').children().click(function(e) {
     var menu='images/header/menu.png';
         $('.navbar-header').children().first().children().attr('src',menu);
@@ -39,9 +40,7 @@ $('.close').click(function(e) {
 $('#paytab').click(function(e) {
     $('body').css('display', 'none');
 })
-$('.item').click(function(e) {
-    window.location.href="./newsDetail.html";  
-})
+
 $(function() {
     $('.jionUs').click(function(e) {
         $('.jionUs').parent().parent().parent().parent().parent().children().removeClass('Liz-absolute');
@@ -49,11 +48,13 @@ $(function() {
         $('.jionUs').addClass('Liz-none');
         $(this).removeClass('Liz-none').addClass('Liz-block');
         $('.close').addClass('Liz-none');
+        $('.subclose').addClass('Liz-none');
             if ($('.jionUs').parent().parent().parent().next().hasClass('in') && $(this).parent().parent().parent().next().hasClass('in')) {
                 $('.jionUs').removeClass('Liz-none').addClass('Liz-block');
                 $('.jionUs').parent().parent().parent().parent().parent().children().addClass('Liz-absolute');
                 $('.jionUs').children().children().addClass('Liz-none');
                 $('.close').removeClass('Liz-none');
+                $('.subclose').removeClass('Liz-none');
             }
     })
 })
@@ -84,9 +85,7 @@ $(function() {
      * ------------------------------------------------------------ 
      */
   
-$(function(){
-	ChainClick();
-})
+
 
 $('.JU').click(function (argument) {
 	if ($('.jionUs').parent().parent().parent().next().hasClass('in')) {
@@ -97,9 +96,3 @@ $('.JU').click(function (argument) {
 	chain= '#'+chain;
 	$(chain).click();
 })
-function ChainClick(argument) {
-	var href = window.location.href;
-	var chain = href.substr(href.length-7);
-	chain= '#'+chain;
-	$(chain).click();
-}

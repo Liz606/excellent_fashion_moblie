@@ -9,6 +9,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    z-index: 9999;  
 }
 .icoList li{
     -webkit-box-flex:1;
@@ -48,27 +49,27 @@
     background-size: cover;
 }
 .subbrand1{
-    background-image: url("../images/subbrand/brand1.png");
-    background-size: cover;
-    background-position: 50%;
+    background-image: url("../images/subbrand/brand1.jpg");
+    background-size: auto 100%;
+
 }
 .subbrand2{
-    background-image: url("../images/subbrand/brand2.png");
-    background-size: auto 140%;
-    background-position: 50% 0%;
+    background-image: url("../images/subbrand/brand2.jpg");
+    background-size: auto 100%;
+
 }
 .subbrand3{
-    background-image: url("../images/subbrand/brand3.png");
-    background-size: auto 150%;
-    background-position: 50% 0%;
+    background-image: url("../images/subbrand/brand3.jpg");
+    background-size: auto 100%;
+
 }
 .subbrand4{
-    background-image: url("../images/subbrand/brand4.png");
-    background-size: auto 122%;
-    background-position: 50% 0%;
+    background-image: url("../images/subbrand/brand4.jpg");
+    background-size: auto 100%;
+
 }
 .subbrand5{
-    background-image: url("../images/subbrand/brand5.png");
-    background-size: auto 141%;
-    background-position: 100% 0%;
+    background-image: url("../images/subbrand/brand5.jpg");
+    background-size: auto 100%;
+
 }

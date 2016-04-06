@@ -12,22 +12,12 @@
 }
 .nav-tabs {
 	width: 100%;
-<<<<<<< HEAD
     border-bottom: 1px solid #ddd;
     height: 130px!important;
 }
 .nav-tabs>li{
 	width: 21%;
     margin: 2%;
-=======
-	 margin-bottom: 50px;
-    border-bottom: 1px solid #ddd;
-    height: 60px!important;
-}
-.nav-tabs>li{
-	width: 24%;
-    margin: 1% auto;
->>>>>>> 75cc444f0088eca74d9db7fd986274851a5301d2
     float: left;
     margin-bottom: -1px;
 }
@@ -59,11 +49,7 @@
 }
 .payBtn:after{
 	background: #ffffff;
-<<<<<<< HEAD
 	height: 60%;
-=======
-	height: 75%;
->>>>>>> 75cc444f0088eca74d9db7fd986274851a5301d2
 }
 .payBtn img{
 	width: 100%;

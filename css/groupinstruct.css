@@ -111,7 +111,9 @@
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
 }
-
+#sliderBox1 li{
+    background: #ffffff;
+}
 .table{
     border-spacing: 0;
     border-collapse: collapse;

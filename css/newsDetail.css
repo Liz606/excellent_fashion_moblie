@@ -34,3 +34,5 @@
 .share-link{
     display: inline-block;
 }
+.contentImg img{max-width:98%}
+.contentImg p{margin-bottom:10px;}

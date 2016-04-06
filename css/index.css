@@ -7,27 +7,27 @@
 
 
 .index1{
-    background-image: url("../images/header/1.png");
-    background-size: cover;
-    background-position: 50%;
+    background-image: url("../images/header/1.jpg");
+    background-size: auto 100%;
+    background-position: 100%;
 }
 .index2{
-    background-image: url("../images/header/2.png");
-    background-size: auto 140%;
-    background-position: 50% 0%;
+    background-image: url("../images/header/2.jpg");
+    background-size: auto 100%;
+    background-position: 100% 0%;
 }
 .index3{
-    background-image: url("../images/header/3.png");
-    background-size: auto 150%;
-    background-position: 50% 0%;
+    background-image: url("../images/header/3.jpg");
+    background-size: auto 100%;
+    background-position: 100% 0%;
 }
 .index4{
-    background-image: url("../images/header/4.png");
-    background-size: auto 122%;
-    background-position: 50% 0%;
+    background-image: url("../images/header/4.jpg");
+    background-size: 100% 100%;
+    background-position: 100% 0%;
 }
 .index5{
-    background-image: url("../images/header/5.png");
+    background-image: url("../images/header/5.jpg");
     background-size: 100%;
     background-position: 100% 0%;
 }

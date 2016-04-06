@@ -135,6 +135,9 @@ a:hover {
 .bgDefault {
     background: rgb(231, 235, 236)!important;
 }
+.bgWhite {
+    background: rgb(255, 255, 255)!important;
+}
 .fl {
     float: left;
 }
