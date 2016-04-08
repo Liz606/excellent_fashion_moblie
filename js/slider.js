@@ -64,7 +64,7 @@
     /*function*/
         function pageMove(e)
         {
-            e.preventDefault();
+           // e.preventDefault();
         }
 
     //pageStart
