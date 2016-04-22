@@ -3,7 +3,6 @@
         var timer;
         var _point=$(_point).children();
         var index = 0; //记录点击
-        var sliderWidth=$(window).width();
         //将轮播图最后一个移动到第一个
         var superlast=$(_super).children().last().clone();
         $(_super).children().last().remove();
@@ -13,16 +12,29 @@
         var p=1;//错位个数
         var start={},
             current={};
-        //动态设置滚动元素的宽度，left和index编号
-        $.each(Children,function(i){
-             $(this).attr({'width':(sliderWidth + 'px'),'index':(i)});
+        var sliderWidth=$(window).width();
+         $.each(Children,function(i){
+             $(this).attr({'width':'100%','index':(i)});
              $(this).css({'left':(($(this).attr('index')-1)*sliderWidth + 'px')});
              $(this).attr({'index':i});
              if (i==0) {
                $(this).attr('index',_const); 
              };
-             //$(this).html($(this).attr('index'));//输出当前页号
         })
+           $(window).resize(function(){  
+                var sliderWidthPre=sliderWidth;
+                //alert('屏幕大小发生变化');
+                sliderWidth=$(window).width();
+                 stopAuto();
+                 $.each(Children,function(){
+                    var leftTemp=(parseInt($(this).css('left'))/sliderWidthPre)*sliderWidth+ 'px';
+                    $(this).css('left', leftTemp);
+                });
+                 autoPlay(sliderWidth);
+            });
+       
+                 
+        
         //当需要显示原点时
             _point[0].className = 'on';
            for (var i = _point.length - 1; i >= 0; i--) {
@@ -172,7 +184,6 @@
                     }else{
                         left=wid+leftCorrt+(_const)*sliderWidth;
                     }
-                    
                 };
 
 
